@@ -1,11 +1,11 @@
 soma = 0
 
 while True:
-    numero = float(input("Digite um número (0 para parar): "))
+    numero = int(input("Digite um número (0 para parar): "))
     
-    if numero != 0:
-        soma += numero
-    else:
+    if numero == 0:
         break
+    
+    soma += numero
 
-print("A soma total é:", soma)
+print("Soma total:", soma)
